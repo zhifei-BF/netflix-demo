@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: CLOUD-CONSUMER-USER-FEIGN
+server:
+  port: 8004
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true #注册时使用ip的方式
+logging:
+  level:
+    com.liquor.cloud.consumer.user.feign.MovieServiceFeign: debug
